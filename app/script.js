@@ -1,3 +1,3 @@
 d3.select('.item')
-	.append('div')
+	.append('span')
 	.html('<strong>Selection</strong>')
