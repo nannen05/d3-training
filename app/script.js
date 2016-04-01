@@ -1,3 +1,9 @@
-d3.select('.item')
-	.append('span')
-	.html('<strong>Selection</strong>')
+d3.selectAll('.item:nth-child(3)')
+	.classed({
+		'highlight' : true, 
+		'item' : false,
+		'bigger' : true
+	});
+
+d3.selectAll('.item:nth-child(4)')
+	.attr('class', 'bigger')
