@@ -66,5 +66,28 @@ d3.select('#chart-01')
 		.attr('r', 50)
 		.style('fill', '#840043')
 
+var bardata = [20, 30, 45, 105, 50];
 
+var height = 400,
+	width = 600,
+	barWidth = 50,
+	barOffset = 5;
+
+d3.select('#chart-02').append('svg')
+	.attr('width', width)
+	.attr('height', height)
+	.style('background', '#c9d7d6')
+	.selectAll('rect').data(bardata)
+	.enter().append('rect')
+		.style('fill' , '#c61c6f')
+		.attr('width', barWidth)
+		.attr('height', function(d) {
+			return d;
+		})
+		.attr('x' , function(d,i) {
+			return i * (barWidth + barOffset);
+		})
+		.attr('y', function(d) {
+			return height - d;
+		})
 
