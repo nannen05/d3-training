@@ -66,7 +66,7 @@ d3.select('#chart-01')
 		.attr('r', 50)
 		.style('fill', '#840043')
 
-var bardata = [20, 30, 45, 105, 50, 220];
+var bardata = [20, 30, 45, 105, 50, 220, 200, 150];
 
 var height = 400,
 	width = 600,
